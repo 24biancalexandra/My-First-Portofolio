@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bianca Simple Port</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <img src="./assets/logo-setyo.png" alt="logo">
+        </div>
+        <nav>
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Who Am I</a></li>
+                <li><a href="#">My Skills</a></li>
+                <li><a href="#">My Projects</a></li>
+                <li><a href="#">Contact Me</a></li>
+            </ul>
+        </nav>
+        <a href="#">
+            <button class="btn-hire">Hire Me Now!</button>
+        </a>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="left-hero">
+            <h3>Hello, Welcome!</h3>
+            <h1>I'm <span class="bianca-span">Bianca</span></h1>
+            <p>Student, Musician & Arts Enthuasist</p>
+            <a href="#">
+                <button class="btn-explore">Explore More</button>
+            </a>
+        </div>
+        <div class="right-hero">
+            <img src=https://www.canva.com/design/DAHb2FuvZGc/PaBmPoyL_BcyxclnldBAkA/edit?ui=eyJEIjp7IkoiOnsiRCI6eyJBPyI6IkEifX0sIlMiOnRydWV9LCJBIjp7IkEiOiJkb3dubG9hZF9wbmciLCJGIjp0cnVlfSwiRyI6eyJCIjp0cnVlLCJEIjp7IkQiOnsiQT8iOiJBIiwiQSI6IkIifX19fQ"" alt="Foto Bianca Alexandra Nainggolan">
+        </div>
+    </section>
+
+    <!--About-->
+    <section id="about">
+        <div class="left-about">
+            <h1>About Me</h1>
+            <p>I'm a middle school student who is in student council aswell interested in arts. I usually use Canva to design posters and slides, however I use IbisPaint to draw aswell Alight Motion to edit. I am also into playing the piano, I am grade 11th in piano.</p>
+            <ul class="ul-about">
+                <li><strong>School:</strong> ORA et LABORA BSD</li>
+                <li><strong>Hobbies:</strong> Drawing, Design, and Playing Music</li>
+                <li><strong>First Laungage:</strong> Indonesian and English</li>
+            </ul>
+        </div>
+        <div class="right-about">
+            <div class="card">
+                <h3>😊 Musician</h3>
+                <p>I love to play my favorite songs or play songs that others requsted me to play on the piano.</p>
+            </div>
+            <div class="card">
+                <h3> 🎨Arts</h3>
+                <p>I love to make digital and traditional art.</p>
+            </div>
+            <div class="card">
+                <h3> 🧑‍💻 Designer</h3>
+                <p>I love to make designs on Canva, that usefull for other person.</p>
+            </div>
+        </div>
+    </section>
+
+</body>
+</html>
+
+
+
+
+Code style.css:
+
+
+body {
+    background-color: #ffffff;
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+/* Header Styling */
+header {
+    display: flex;
+    justify-content: space-between;
+    background-color: #FFF1D1;
+    align-items: center;
+    border-radius: 0 30px;
+    padding: 20px 40px;
+    border-bottom: 8px solid #00b7cd;
+}
+
+.logo img {
+    width: 120px;
+}
+
+/* Navigasi Mendatar */
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 30px;
+    margin: 0;
+    padding: 0;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #333;
+    font-weight: bold;
+    font-size: 16px;
+    transition: color 0.3s;
+}
+
+nav ul li a:hover {
+    color: #00B7CD;
+}
+
+/* Tombol Header */
+.btn-hire {
+    background-color: #00B7CD;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 8px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.btn-hire:hover {
+    background-color: #0095a8;
+}
+
+/* Hero Section Styling */
+.hero {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 60px 40px;
+    max-width: 1100px;
+    margin: 0 auto;
+}
+
+.left-hero {
+    flex: 1;
+}
+
+.left-hero h3 {
+    color: #00B7CD;
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+
+.left-hero h1 {
+    font-size: 48px;
+    color: #333;
+    margin: 20px 0 15px 0;
+}
+
+.left-hero p {
+    color: #666;
+    font-size: 18px;
+    margin-bottom: 25px;
+}
+
+.btn-explore {
+    background-color: #757070;
+    color: white;
+    border: none;
+    padding: 12px 24px;
+    border-radius: 0 0 0 25px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.right-hero {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+}
+
+.right-hero img {
+    width: 300px;
+    height: 300px;
+    object-fit: cover;
+    border-radius: 50%;
+    border: 6px solid #FFF1D1;
+}
+
+.setyo-span {
+    background-image:linear-gradient(to right,#00b7cd,#fff1d1, white);
+    padding: 6px 25px;
+    border-left: 12px solid #0095a8;
+    border-radius: 0 30px;
+}
+.setyo-span:hover {
+    color: #fc5e48;
+}
+
+.btn-explore:hover {
+    background-image: linear-gradient(to right, grey, #0095a8);
+}
+
+#about {
+    background-color: #fff1d1;
+    padding: 25px;
+    display: flex;
+    gap: 25px;
+    background-image: linear-gradient(to right, white, #fff1d1);
+}
+#about h1 {
+    color: #fc5e48;
+}
+.left-about {
+    align-self: center;
+    width: 50%;
+}
+.right-about {
+    flex: 1;
+    flex-direction: column;
+    display: flex;
+    min-width: 300px;
+    gap: 20px;
+}
+.card {
+    background-color: white;
+    padding: 20px;
+    border-left: 12px solid #00b7cd;
+    border-radius: 0 0 0 30px;
+}
